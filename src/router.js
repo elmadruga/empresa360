@@ -1,9 +1,15 @@
 
+import { createRouter, createWebHistory } from 'vue-router'
+//createWebHashHistory
 import HomePadrao from '@/views/HomePadrao.vue'
 import LoginPadrao from '@/views/LoginPadrao.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import SitePadrao from '@/views/SitePadrao.vue'
 
 const routes = [
+    {
+        path: '/', //localhost:8080/site
+        component: SitePadrao
+    },
     {
         path: '/home', //localhost:8080/home
         component: HomePadrao
@@ -15,7 +21,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes: routes
 })
 
