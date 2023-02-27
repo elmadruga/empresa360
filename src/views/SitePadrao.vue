@@ -6,7 +6,7 @@
                 <div class="navbar-nav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Acessar</a>
+                            <router-link class="nav-link" to="/login">Acessar</router-link>
                         </li>
                     </ul>
                 </div>
